@@ -187,12 +187,12 @@ a {
 /* Logos */
 #GitHub-logo {
     width: 80%;
-    height: auto;
+    height: 80%;
     transition: transform .2s;
 }
 #LinkedIn-logo {
     width: 80%;
-    height: auto;
+    height: 80%;
     transition: transform .2s;
 }
 #GitHub-logo:hover {
