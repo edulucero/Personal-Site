@@ -340,6 +340,10 @@ button {
     .contact-section {
         padding: 10px 10px 180px;
     }
+
+    #contact-heading {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 434px) {
