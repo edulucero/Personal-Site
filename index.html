@@ -37,7 +37,14 @@
     </section>
     <div class="border"></div>
     <section class="projects-section">
-      <h2 id="projects">Projects</h2>
+      <div class="projects-header">
+        <h2 id="projects">Projects</h2>
+        <ul>
+          <li>
+            <a href="#contact-heading">Contact</a>
+          </li>
+        </ul>
+      </div>
       <div class = "projects-cards-wrapper">
         <div class = "projects-cards-container">
           <div class="card">  
@@ -79,22 +86,29 @@
         </div>
       </div>
     </section>
+    <div class="proj-cont-border"></div>
     <section class='contact-section'>
       <h2 id = "contact-heading">Contact</h2>
       <div class = "contact-items-wrapper">
         <div class = "contacts-grid">
-          <div class="logos">
-            <!-- <span class="form-text">Name</span>
-            <input type="text">
-            <span class="form-text">Email</span>
-            <input type="text">
-            <span class="form-text">Message</span>
-            <textarea type="text" id="message-input"></textarea>
-            <button>Send Message</button> -->
-            <a class="center" href = "https://github.com/edulucero"><img id = "GitHub-logo" src = "imgs/GitHub_Logo.png"></a>
+          <div class="">
+            <form name="contact" method="POST" data-netlify="true">
+              <label class="form-text">Name</label>
+              <input type="text" name="name">
+              <label class="form-text">Email</label>
+              <input type="text" name="email">
+              <label class="form-text">Message</label>
+              <textarea type="text" name="message" id="message-input"></textarea>
+              <button type="submit">Send Message</button>
+            </form>
           </div>
           <div class="logos">
-            <a class="center" href = "https://www.linkedin.com/in/eduardo-lucero-642854124/"><img id = "LinkedIn-logo" src = "imgs/LinkedIn-logo.png"></a>
+            <a class="center" href = "https://github.com/edulucero">
+              <img id = "GitHub-logo" src = "imgs/GitHub_Logo.png">
+            </a>
+            <a class="center" href = "https://www.linkedin.com/in/eduardo-lucero-642854124/">
+              <img id = "LinkedIn-logo" src = "imgs/LinkedIn-logo.png">
+            </a>
           </div>
         </div>
       </div>

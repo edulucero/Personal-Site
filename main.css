@@ -48,8 +48,11 @@ p {
 
 .border {
     border-bottom: 1px solid rgba(255, 255, 255, 0.54);
-    margin-bottom: 40px;
-    width: 100%;
+}
+
+.proj-cont-border {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.54);
+    margin-bottom: 100px;
 }
 
 h2 {
@@ -81,7 +84,19 @@ h2 {
     width: 100vw;
     height: 100%;
     margin: 0 auto;
-    padding: 40px 10px 180px;
+    padding: 80px 10px 180px;
+}
+
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-header a {
+    color: white;
+    height: 59px;
+    font-size: 1.5rem;
+    margin: 5rem 2rem 0 0;
 }
 
 
@@ -89,7 +104,7 @@ h2 {
 .contact-section {
     width: 100vw;
     margin: 0 auto;
-    padding: 40px 40px 110px;
+    padding: 80px 40px 144px;
     background: white;
     color: #1C1D21;
 }
@@ -156,8 +171,8 @@ h4 {
 
 .logos {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -187,12 +202,12 @@ a {
 /* Logos */
 #GitHub-logo {
     width: 80%;
-    height: 80%;
+    height: 100%;
     transition: transform .2s;
 }
 #LinkedIn-logo {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 100%;
     transition: transform .2s;
 }
 #GitHub-logo:hover {
@@ -211,7 +226,7 @@ ul {
 nav a {
     text-decoration: none;
     font-size: 1.2rem;
-    margin-right: 30px;
+    margin-left: 30px;
     color: inherit;
 }
 
@@ -267,6 +282,10 @@ button {
     padding: 5px;
     border: 1px solid #d1d5da;
     border-radius: 3px;
+}
+
+textarea {
+    resize: none;
 }
 
 @media (max-width: 1258px) {
