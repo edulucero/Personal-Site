@@ -144,7 +144,7 @@ h2 {
 }
 
 .half-img {
-    width: 45%;
+    max-width: 48%;
     height: auto;
     border-radius: 15px;
 }
@@ -495,13 +495,17 @@ p {
         font-size: 13rem;
     }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1838px) {
     h1 {
         font-size: 15rem;
     }
 
     p {
         font-size: 3.5rem;
+    }
+    .projects-cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 99%;
     }
 }
 
