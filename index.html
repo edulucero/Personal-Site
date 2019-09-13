@@ -8,16 +8,17 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto&display=swap">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/84ea5d1389.js"></script>
 </head>
 <body>
   <header>
     <nav>
       <ul>
         <li>
-          <a href = "#projects">Projects</a>
+          <a href = "#projects" class="nav-link">Projects</a>
         </li>
         <li>
-          <a href = "#contact-heading">Contact</a>
+          <a href = "#contact-heading" class="nav-link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -32,61 +33,160 @@
       <div>
         <p>I am a front-end developer based in Sydney, Australia. I use the latest web
             technoloies to build modern, dynamic web apps.</p>
-        <p>Check out <a href="#projects">my work</a> and <a href="">contact</a> me below. Thanks for dropping by!</p>
+        <p>Check out <a href="#projects">my work</a> and <a href="#contact-heading">contact</a> me below. Thanks for dropping by!</p>
       </div>
     </section>
     <div class="border"></div>
     <section class="projects-section">
-      <h2 id="projects">Projects</h2>
+      <h2 id="contact-heading">Projects</h2>
       <div class = "projects-cards-wrapper">
-        <div class = "projects-cards-container">
-          <div class="card">  
-            <div class="proj-card-heading">
-              <h3>Unsplash Viewer</h3>  
+        <div class = "projects-cards-grid">
+            <img src="imgs/unsplash-1.png" class="projects-imgs" alt="">
+          <div class="">
+              <div class="proj-card-heading">
+                <h3>Unsplash Viewer</h3>
+              </div>
+              <div class="icon-links-container">
+                <span style="font-size: 18px; margin-left: 0px;">
+                  <a href="https://upbeat-pare-548e74.netlify.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </span>
+                <span style="font-size: 20px; margin-left: 5px;">
+                  <a href="https://github.com/edulucero/photos-app" target="_blank"><i class="fab fa-github"></i></a>
+                </span>
+              </div>
+              <h4>Features</h4>
+              <ul class="column">
+                <li>
+                  View the latest and top photos on unsplash.com
+                </li>
+                <li>
+                  Adjust photo grid size
+                </li>
+                <li>
+                  View a random photo
+                </li>
+                <li>
+                  Search photos
+                </li>
+                <li>
+                  Filter by curated images
+                </li> 
+                <li>
+                  Pagination
+                </li>
+              </ul>
             </div>
-            <img class="projects-imgs" src="imgs/photo-app.png" alt="">                                
+          <div class="row">  
+            <img class="half-img" src="imgs/news-1.png" alt="">
+            <img class="half-img" src="imgs/news-2.png" alt="">               
           </div>
-          <div class="card">
-            <div class="proj-card-heading">
-              <h3>Top Github Repos App</h3>
+          <div class="">
+            <div class="proj-card-heading space-between">
+              <h3>Hacker-news Clone</h3>
             </div>
-            <img class="projects-imgs" src="imgs/github-repos.png" alt="">
-          </div>
-          <div class="card">
-            <div class="proj-card-heading">
-              <a href="https://goofy-babbage-ed509c.netlify.com">
-                <h3>Hacker-news (soft) clone</h3>
-              </a>
+            <div class="icon-links-container">
+              <span style="font-size: 18px; margin-left: 0px;">
+                <i class="fas fa-external-link-alt"></i>
+              </span>
+              <span style="font-size: 20px; margin-left: 5px;">
+                <i class="fab fa-github"></i>
+              </span>
             </div>
-            <img class="projects-imgs" src="imgs/hacker-news.png" alt="">
+            <h4>Features</h4>
+            <ul class="column">
+              <li>
+                See the latest and top news from hacker-news
+              </li>
+              <li>
+                See jobs
+              </li>
+              <li>
+                See post comments
+              </li>
+              <li>
+                See user profiles
+              </li>
+              <li>
+                Mobile friendly/responsive
+              </li>
+              <li>
+                Dark and light modes
+              </li>
+            </ul>
           </div>
-          <div class="card">
-            <div class="proj-card-heading" >
-              <h3>React Calculator</h3>
-            </div>
-            <img class = "projects-imgs" src="imgs/react-calc.png">
+          <div class="card card-4">
+            <img class="projects-imgs" src="imgs/buy-live.png" alt="">
           </div>
-          <div class="card">
+          <div class="card card-5">
             <div class="proj-card-heading">
               <h3>Product Landing Page</h3>
             </div>
-            <img class="projects-imgs" src="imgs/buy-live.png" alt="">
-          </div>
-          <div class="card">
-            <div class="proj-card-heading">
-              <h3>Technical Documentation Page</h3>
+            <div class="icon-links-container">
+              <span style="font-size: 18px; margin-left: 0px;">
+                <i class="fas fa-external-link-alt"></i>
+              </span>
+              <span style="font-size: 20px; margin-left: 5px;">
+                <i class="fab fa-github"></i>
+              </span>
             </div>
-            <img class="projects-imgs" src="imgs/tech-doc.png" alt="">
+            <h4>
+              Features
+            </h4>
+            <ul class="column">
+              <li>
+                Fully responsive
+              </li>
+              <li>
+                Mobile friendly
+              </li>
+              <li>
+                Dynamic navbar
+              </li>
+              <li>
+                Dynamic menus
+              </li>
+              <li>
+                Dynamic text
+              </li>
+            </ul>
+          </div>
+          <div class="card card-6">
+            <img class="projects-imgs calc-img" src="imgs/react-calc.png" alt="">
+          </div>
+          <div>
+            <div class="proj-card-heading">
+              <h3>Calculator</h3>
+            </div>
+            <div class="icon-links-container">
+              <span style="font-size: 18px; margin-left: 0px;">
+                <i class="fas fa-external-link-alt"></i>
+              </span>
+              <span style="font-size: 20px; margin-left: 5px;">
+                <i class="fab fa-github"></i>
+              </span>
+            </div>
+            <h4>Features</h4>
+            <ul class="column">
+              <li>
+                Fully functional calculator
+              </li>
+              <li>
+                Responsive
+              </li>
+              <li>
+                Mobile friendly
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-    <div class="proj-cont-border"></div>
+    <div class="border"></div>
     <section class='contact-section'>
       <h2 id = "contact-heading">Contact</h2>
       <div class = "contact-items-wrapper">
         <div class = "contacts-grid">
-          <div class="">
+          <div class="form-container">
             <form name="contact" method="POST" data-netlify="true">
               <label class="form-text">Name</label>
               <input type="text" name="name">
@@ -110,4 +210,6 @@
     </section>
   </main>
 </body>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="main.js"></script>
 </html>
