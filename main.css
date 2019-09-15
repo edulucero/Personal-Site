@@ -15,10 +15,11 @@ body {
 	animation: gradientBG 5s ease infinite;
 }
 
-.row {
+.news-photo-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: auto;
 }
 
 .column {
@@ -145,7 +146,6 @@ h2 {
 
 .half-img {
     max-width: 48%;
-    height: auto;
     border-radius: 15px;
 }
 
@@ -423,7 +423,7 @@ p {
     }
 }
 
-@media (max-width: 626px) {
+@media (max-width: 776px) {
     h1 {
         font-size: 4.5rem;
     }
